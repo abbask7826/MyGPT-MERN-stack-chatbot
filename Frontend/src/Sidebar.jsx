@@ -5,7 +5,7 @@ import {v1 as uuidv1} from "uuid";
 import blacklogo from "./assets/blacklogo.png";
 
 function Sidebar() {
-    const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply, setCurrThreadId, setPrevChats} = useContext(MyContext);
+    const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, reply, setReply, setCurrThreadId, setPrevChats} = useContext(MyContext);
 
     const getAllThreads = async () => {
         try {
@@ -21,7 +21,7 @@ function Sidebar() {
 
     useEffect(() => {
         getAllThreads();
-    }, [currThreadId])
+    }, [currThreadId,reply])
 
 
     const createNewChat = () => {
