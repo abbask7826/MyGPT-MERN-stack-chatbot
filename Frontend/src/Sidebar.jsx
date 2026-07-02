@@ -71,7 +71,7 @@ function Sidebar() {
                 <img src={blacklogo} alt="gpt logo" className="logo"></img>
                 <span className="sidebartop">
                     <i className="fa-solid fa-pen-to-square"></i>&nbsp;
-                    <i>Create new chat </i>
+                    <i>Start new chat </i>
                 </span>
             </button>
 
